@@ -1,72 +1,103 @@
-# Fake Email Detection using Naive Bayes
+# 📧 Fake Email Detection using Machine Learning
 
-## Project Overview
+A Machine Learning web application that predicts whether an email or SMS message is **Spam** or **Genuine (Ham)**.
 
-This project uses the Naive Bayes algorithm to classify SMS messages as **Spam** or **Ham (Not Spam)**. The text messages are converted into numerical features using **CountVectorizer**, and a **Multinomial Naive Bayes** model is trained to perform the classification.
+## 🚀 Live Demo
 
-## Dataset
+👉 https://fake-email-detection-angel.streamlit.app/
 
-* Dataset: SMS Spam Collection
-* Source: Kaggle
-* Number of Features: 1 (Message)
-* Target Variable: Label (Spam / Ham)
+---
 
-## Technologies Used
+## 📌 Features
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* CountVectorizer
-* Multinomial Naive Bayes
-* Joblib
-* Jupyter Notebook
+- Detects Spam and Genuine messages
+- Machine Learning based prediction
+- User-friendly Streamlit interface
+- Fast and accurate prediction
+- Live web deployment
 
-## Project Workflow
+---
 
-1. Import Libraries
-2. Load Dataset
-3. Explore Dataset
-4. Data Preprocessing
-5. Separate Features and Target
-6. Train-Test Split
-7. Convert Text into Numerical Features using CountVectorizer
-8. Train Multinomial Naive Bayes Model
-9. Make Predictions
-10. Evaluate Model
-11. Save Model and CountVectorizer
+## 🛠️ Technologies Used
 
-## Model Evaluation
+- Python
+- Streamlit
+- Scikit-learn
+- CountVectorizer
+- Joblib
+- Git & GitHub
 
-The model is evaluated using:
+---
 
-* Accuracy Score
-* Confusion Matrix
-* Classification Report (Precision, Recall and F1-Score)
+## 🤖 Machine Learning Model
 
-## Project Structure
+- **Algorithm:** Multinomial Naive Bayes
+- **Vectorizer:** CountVectorizer
+- **Accuracy:** 98.1%
 
-```text
+---
+
+## 📂 Project Structure
+
+```
 FakeEmailDetection/
-│
-├── data/
-│   └── SMSSpamCollection
-│
-├── notebooks/
-│   └── fake_email_detection.ipynb
 │
 ├── models/
 │   ├── naive_bayes_model.pkl
 │   └── count_vectorizer.pkl
 │
-├── images/
-├── README.md
+├── notebook.ipynb
+├── app.py
 ├── requirements.txt
-└── .gitignore
+├── README.md
 ```
 
-## Author
+---
+
+## ▶️ How to Run Locally
+
+Clone the repository:
+
+```bash
+git clone <your-github-repository-link>
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📸 Sample Messages
+
+### Spam
+
+```
+Congratulations! You have won a FREE iPhone.
+Click here to claim your reward.
+```
+
+### Genuine
+
+```
+Hi, I will reach home by 6 PM.
+Please keep the gate open.
+```
+
+---
+
+## 👨‍💻 Developer
 
 **Angel Saxena**
 
-GitHub: https://github.com/ANGELSAXENA
+---
+
+⭐ If you like this project, don't forget to star the repository.
